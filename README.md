@@ -1,31 +1,22 @@
-# Mohammad Rohan — Personal Portfolio
+# Mohammad Rohan — Portfolio refresh
 
-A responsive, premium dark single-page portfolio built with plain HTML, CSS, and a tiny amount of JavaScript. No build tools, framework, or paid hosting are required.
+Responsive single-page portfolio built with plain HTML, CSS, and JavaScript. It works on GitHub Pages without a build step or paid service.
 
-## Preview locally
-1. Extract this folder.
-2. Open `index.html` in a web browser.
+## Publish to the existing GitHub Pages repository
 
-## Before publishing
-1. Open `index.html` in a text editor.
-2. Find `YOUR_EMAIL@example.com` and replace it with the professional email address you want to publish.
-3. Check every role and project description. Add dates, exact event names, project links, and evidence where appropriate.
-4. Do not add private contact details you do not want public.
+1. Open https://github.com/MorganiteGaming/Rohan
+2. Back up the current version first (download the repository ZIP or make sure you can restore the old file from commit history).
+3. In the repository root, select **Add file → Upload files**.
+4. Upload the new `index.html` from this package.
+5. Replace the existing `index.html` only after your backup is safe.
+6. Commit the changes to the branch GitHub Pages is configured to publish (often `main`).
+7. Open **Settings → Pages** and confirm deployment is still configured for the correct branch and `/(root)`.
+8. Wait for deployment, then visit https://morganitegaming.github.io/Rohan/ and hard-refresh with Ctrl+F5.
 
-## Publish free with GitHub Pages
-1. Create or sign in to a GitHub account at https://github.com/.
-2. Create a new **public** repository named `yourusername.github.io` (replace `yourusername` with your GitHub username).
-3. Upload `index.html` to the root of that repository.
-4. Open **Settings → Pages** and choose **Deploy from a branch**, select `main` and `/ (root)`, then save if the setting is shown.
-5. After deployment finishes, visit `https://yourusername.github.io/`.
+## Before sharing
 
-GitHub's interface and publishing options can change. If the special `yourusername.github.io` repository route differs, see https://docs.github.com/en/pages/quickstart.
-
-## Cost
-GitHub Pages can host a public static portfolio on an eligible free plan. The address will be a free GitHub Pages subdomain; you do not need to buy a custom domain. Hosting terms and eligibility are controlled by GitHub.
-
-## Keep it professional
-- Use only accurate roles, dates, and accomplishments.
-- Add photos or screenshots only when you have permission to publish them.
-- Never publish passwords, student IDs, private customer information, or confidential business data.
-- Keep a backup of this folder.
+- I avoided inventing dates, numerical results, awards, or detailed responsibilities that weren't provided.
+- The CV download link is omitted until a final CV PDF is available.
+- Verify event names and that the wording accurately reflects your role.
+- Your WhatsApp number is included because you supplied it. Remove that button if you do not want the number public.
+- Google Fonts provide the typography; fallback fonts are available if Google Fonts cannot load.
