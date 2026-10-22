@@ -6,7 +6,6 @@ Files
 
 HOW TO PREVIEW
 1. Open index.html in a browser.
-2. To preview a portrait locally, press “Customize portrait +” and choose a photo. This preview is only on that browser; it does not publish the photo.
 
 HOW TO PUBLISH / UPDATE ON GITHUB PAGES (PHONE OR COMPUTER)
 1. Open https://github.com/MorganiteGaming/Rohan
@@ -21,7 +20,7 @@ CONTACT LINKS
 - Discord opens Discord and the Copy button copies the username: rohanlovesgooning. A username alone cannot form a reliable direct Discord profile URL; a numeric Discord user ID would be needed for that.
 
 NOTES
-- The portrait chooser is a local preview tool. For everyone to see the portrait, upload profile.jpg to GitHub as described above.
+- For everyone to see the portrait, upload profile.jpg to GitHub as described above. The site loads the image automatically; there is no portrait customization button.
 - The site is static HTML/CSS/JavaScript and does not require a build step.
 
 
@@ -39,7 +38,7 @@ LATEST EVENT UPDATE
 
 
 LATEST CERTIFICATE TEXT UPDATE
-- Removed the sentence about specific award titles, dates, and results not being listed unless confirmed.
+- The Certificates section retains its full learning and participation summary; only the sentence about unconfirmed award titles, dates, and results has been removed.
 
 FREE DOMAIN OPTION
 - The current GitHub Pages address remains free. A possible free custom-style subdomain is rohan.is-a.dev, if available and approved by the is-a.dev project. Registration is reviewed and not guaranteed. A conventional .dev domain such as rohan.dev is normally paid.
