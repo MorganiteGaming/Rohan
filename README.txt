@@ -33,6 +33,14 @@ LATEST UPDATE
 
 
 LATEST EVENT UPDATE
-- Event list order: non-Rajuk events first; Rajuk College Cultural Illumina, Rajuk National ScisPark 4.0, and Rajuk College Science Fest at the end.
+- Event list order: non-Rajuk events first; Rajuk College Cultural Illumina, Rajuk National ScisPark 4.0, and Rajuk College Events at the end.
 - Added Bangladesh Science Exposium 2026 as a Certificate of Achievement.
-- Updated event names to Third National Astro Carnival (International Hope School Bangladesh), NDPC National Film Fest 2026, Technovation 2026 (presented by Josephite IT Club), and Innoverse Bangladesh (BUET).
+- Updated event names to 3rd National Astro Carnival (International Hope School Bangladesh), NDPC National Film Fest 2026, Technovation 2026 (presented by Josephite IT Club), and Innoverse Bangladesh (BUET).
+
+
+LATEST CERTIFICATE TEXT UPDATE
+- Removed the sentence about specific award titles, dates, and results not being listed unless confirmed.
+
+FREE DOMAIN OPTION
+- The current GitHub Pages address remains free. A possible free custom-style subdomain is rohan.is-a.dev, if available and approved by the is-a.dev project. Registration is reviewed and not guaranteed. A conventional .dev domain such as rohan.dev is normally paid.
+- After receiving an approved subdomain, follow the is-a.dev GitHub Pages guide and add the domain in this repository's Settings → Pages.
