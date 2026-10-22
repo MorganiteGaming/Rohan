@@ -23,3 +23,16 @@ CONTACT LINKS
 NOTES
 - The portrait chooser is a local preview tool. For everyone to see the portrait, upload profile.jpg to GitHub as described above.
 - The site is static HTML/CSS/JavaScript and does not require a build step.
+
+
+LATEST UPDATE
+- Mobile hero order is now heading → introduction → centered portrait → action buttons.
+- Decorative arrow symbols have been removed from links and buttons.
+- Morganite Gaming and JerseyArchive use normal capitalization; STRITA and NOVIQ remain uppercase.
+- RCRIC is expanded to Rajuk College Robotics and ICT Club in the leadership description.
+
+
+LATEST EVENT UPDATE
+- Event list order: non-Rajuk events first; Rajuk College Cultural Illumina, Rajuk National ScisPark 4.0, and Rajuk College Science Fest at the end.
+- Added Bangladesh Science Exposium 2026 as a Certificate of Achievement.
+- Updated event names to Third National Astro Carnival (International Hope School Bangladesh), NDPC National Film Fest 2026, Technovation 2026 (presented by Josephite IT Club), and Innoverse Bangladesh (BUET).
