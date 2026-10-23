@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Mohammad Rohan — student, entrepreneur, technology enthusiast and community builder in Dhaka, Bangladesh.">
+  <meta property="og:title" content="Mohammad Rohan — Portfolio">
+  <meta property="og:description" content="Entrepreneurship, leadership, technology and community building.">
+  <meta property="og:type" content="website">
+  <title>Mohammad Rohan — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;450;500;550;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#090909;--panel:#141414;--panel-soft:#191919;--text:#f4f0e8;--muted:#a6a39d;--line:#30302d;--accent:#f0eadc;--max:1160px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:88px}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.7;font-weight:400}
+    a{color:inherit;text-decoration:none}
+    a:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:8px}
+    .wrap{width:min(var(--max),calc(100% - 44px));margin-inline:auto}
+    .mono,.eyebrow,.navlinks,.tag,.num,.meta,footer,.project-index,.label,.portrait-caption{font-family:"DM Mono",monospace}
+    .topbar{position:sticky;top:0;z-index:10;background:rgba(9,9,9,.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(244,240,232,.12)}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-weight:600;letter-spacing:-.045em;font-size:20px}
+    .brand span{color:var(--accent)}
+    .navlinks{display:flex;gap:24px;align-items:center}
+    .navlinks a{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);transition:color .2s}
+    .navlinks a:hover,.socials a:hover{color:var(--text)}
+    .navlinks .contact-link{padding:10px 16px;border:1px solid var(--line);border-radius:999px;color:var(--text)}
+    .hero{padding:100px 0 82px;position:relative;overflow:hidden}
+    .hero:after{content:"";position:absolute;width:480px;height:480px;border:1px solid rgba(240,234,220,.10);border-radius:50%;right:-180px;top:10px;pointer-events:none;box-shadow:0 0 0 55px rgba(240,234,220,.022),0 0 0 110px rgba(240,234,220,.014)}
+    .eyebrow{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--accent);display:flex;gap:10px;align-items:center}
+    .eyebrow:before{content:"";width:25px;height:1px;background:currentColor}
+    h1,h2,h3{font-family:"Outfit",Arial,sans-serif;text-transform:none;font-weight:450;letter-spacing:-.035em}
+    h1{font-size:clamp(54px,8.6vw,104px);line-height:1.04;margin:25px 0 27px;position:relative;z-index:1}
+    h1 .outline{color:var(--text);-webkit-text-stroke:0}
+    .hero-bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;position:relative;z-index:1}
+    .intro{max-width:600px;color:#c5c1b8;font-size:clamp(16px,2vw,19px);margin:0}
+    .actions{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:12px;padding:13px 17px;font-size:12px;font-weight:600;border:1px solid var(--line);border-radius:999px;justify-content:center;transition:transform .2s,border-color .2s,background .2s}
+    .btn:hover{transform:translateY(-2px);border-color:var(--text)}
+    .btn.primary{background:var(--accent);color:#101010;border-color:var(--accent)}
+    .btn.primary:hover{background:#fffaf0}
+    .scroll-note{margin-top:64px;padding-top:16px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted);font:10px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.1em}
+    section{padding:76px 0;border-top:1px solid var(--line)}
+    .section-head{display:grid;grid-template-columns:150px 1fr;gap:28px;margin-bottom:38px}
+    .num{font-size:11px;color:var(--accent);padding-top:10px}
+    h2{font-size:clamp(32px,4.7vw,52px);line-height:1.15;margin:0;letter-spacing:-.045em;font-weight:500}
+    .lede{color:var(--muted);max-width:650px;margin:14px 0 0;font-size:14px}
+    .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px}
+    .about-copy{font-size:15px;color:#d2cec5;max-width:680px}
+    .about-copy p:first-child{margin-top:0}
+    .facts{border-top:1px solid var(--line)}
+    .fact{display:grid;grid-template-columns:120px 1fr;gap:15px;padding:16px 0;border-bottom:1px solid var(--line)}
+    .label{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+    .value{font-size:13px;font-weight:600}
+    .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .card{background:linear-gradient(145deg,#171717,#111);border:1px solid #292927;border-radius:20px;padding:26px;min-height:220px;display:flex;flex-direction:column;position:relative;transition:transform .28s cubic-bezier(.2,.7,.2,1),border-color .28s ease,box-shadow .28s ease,background .28s ease;will-change:transform}
+    .card:hover,.card.reveal.visible:hover{transform:translateY(-7px) scale(1.012);border-color:#777268;box-shadow:0 18px 38px rgba(0,0,0,.28);background:linear-gradient(145deg,#1c1c1c,#121212)}
+    .card:focus-within{border-color:#777268;box-shadow:0 0 0 2px rgba(240,234,220,.08)}
+    .card-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:30px}
+    .project-index{font-size:10px;color:var(--accent)}
+    .tag{font-size:9px;text-transform:uppercase;letter-spacing:.06em;border:1px solid #45433d;border-radius:999px;color:#c4c1b9;padding:6px 10px}
+    h3{font-size:clamp(22px,2.4vw,28px);line-height:1.2;margin:0 0 10px;font-weight:550;letter-spacing:-.03em}
+    .card p{color:var(--muted);font-size:13px;margin:0 0 24px}
+    .card-link{margin-top:auto;display:inline-flex;align-items:center;gap:7px;width:fit-content;color:var(--text);font:10px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid #68645b;padding-bottom:5px;transition:gap .2s,border-color .2s}
+    .card-link:hover{gap:12px;border-color:var(--text)}
+    .timeline{border-top:1px solid var(--line)}
+    .timeline-item{display:grid;grid-template-columns:150px 1fr;gap:28px;padding:24px 0;border-bottom:1px solid var(--line)}
+    .meta{font-size:10px;text-transform:uppercase;color:var(--accent);letter-spacing:.06em;padding-top:5px}
+    .timeline-item h3{font-size:19px;margin-bottom:7px}
+    .timeline-item p{color:var(--muted);font-size:14px;max-width:720px;margin:0}
+    .event-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+    .pill{font-size:11px;color:#dedbd2;border:1px solid #3b3a36;border-radius:999px;padding:8px 13px}
+    .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .skill{padding:18px 20px;border:1px solid var(--line);border-radius:14px;background:#111;font-weight:500;font-size:14px;display:flex;justify-content:space-between;align-items:center;gap:12px;transition:transform .2s,border-color .2s}
+    .skill:hover{transform:translateY(-3px);border-color:#66635c}
+    .skill span{color:#c9c3b7;font:10px "DM Mono",monospace}
+    .cert-note{border-left:2px solid var(--accent);padding:4px 0 4px 20px;color:var(--muted);max-width:760px}
+    /* The contact panel now stays within the dark palette instead of flashing bright cream. */
+    .contact-panel{background:linear-gradient(145deg,#1b1b1b,#131313);color:var(--text);border:1px solid #30302d;border-radius:26px;padding:clamp(28px,5vw,62px);display:grid;grid-template-columns:1fr auto;gap:28px;align-items:end}
+    .contact-panel .eyebrow{color:#c9c3b7}
+    .contact-panel .eyebrow:before{background:#c9c3b7}
+    .contact-panel h2{font-size:clamp(36px,5vw,60px);max-width:700px;margin:20px 0;font-weight:500}
+    .contact-panel p{max-width:540px;color:var(--muted);margin:0}
+    .contact-buttons{display:flex;flex-direction:column;gap:8px;min-width:190px}
+    .contact-buttons .btn{border-color:#45433d;justify-content:space-between}
+    .contact-buttons .btn:hover{background:#242424;border-color:#8b877d}
+    .contact-buttons .btn.primary{background:var(--accent);color:#101010}
+    .contact-buttons .discord-row{display:flex;align-items:stretch;gap:7px}
+    .contact-buttons .discord-row .btn{flex:1;min-width:0}
+    .contact-buttons .copy-discord{border:1px solid #45433d;border-radius:999px;background:transparent;color:var(--text);padding:0 13px;font:10px "DM Mono",monospace;text-transform:uppercase;cursor:pointer}
+    .contact-buttons .copy-discord:hover{background:#242424}
+    footer{padding:24px 0 34px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.06em}
+    .socials{display:flex;flex-wrap:wrap;gap:16px}
+    .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    .hero-layout{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:clamp(28px,5vw,72px);align-items:center;position:relative;z-index:1}
+    .hero-copy{min-width:0}
+    .hero-copy .hero-bottom{align-items:flex-start;flex-direction:column;gap:26px}
+    .hero-copy .intro{max-width:650px}
+    .portrait-wrap{width:100%;max-width:270px;justify-self:end;position:relative}
+    .portrait-frame{aspect-ratio:4/5;overflow:hidden;border:1px solid #393833;border-radius:24px;background:linear-gradient(145deg,#1b1b1a,#0d0d0d);position:relative;display:flex;align-items:center;justify-content:center}
+    .portrait-frame img{width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:none;position:absolute;inset:0}
+    .portrait-placeholder{padding:24px;text-align:center;color:#aaa69c;display:flex;flex-direction:column;align-items:center;gap:12px;font:10px "DM Mono",monospace;letter-spacing:.1em;text-transform:uppercase}
+    .portrait-placeholder svg{width:58px;height:58px;opacity:.75}
+    .portrait-caption{display:flex;justify-content:space-between;gap:10px;margin-top:12px;color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.08em}
+    .hero .scroll-note{position:relative;z-index:1}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*{transition:none!important}}
+    @media(max-width:760px){
+      .wrap{width:min(var(--max),calc(100% - 32px))}
+      .nav{height:64px}
+      .navlinks{gap:12px}
+      .navlinks a{font-size:9px}
+      .navlinks a:nth-child(2),.navlinks a:nth-child(3){display:none}
+      .hero{padding:78px 0 54px}
+      .hero:after{right:-340px;top:40px}
+      .hero-layout{grid-template-columns:minmax(0,1fr);gap:0}
+      .hero-copy,.hero-copy .hero-bottom{display:contents}
+      .hero-copy .eyebrow{order:1}
+      .hero-copy h1{order:2;margin-top:22px}
+      .hero-copy .intro{order:3;margin-top:0}
+      .portrait-wrap{order:4;justify-self:center;max-width:220px;width:min(220px,72%);margin:26px auto 24px}
+      .portrait-frame{border-radius:20px;aspect-ratio:4/5}
+      .hero-copy .actions{order:5;display:flex;gap:10px;margin-top:0}
+      .hero-copy .actions .btn{flex:0 1 auto}
+      .portrait-caption{font-size:8px}
+      .scroll-note{margin-top:42px}
+      section{padding:58px 0}
+      .section-head{grid-template-columns:1fr;gap:10px;margin-bottom:26px}
+      .about-grid{grid-template-columns:1fr;gap:24px}
+      .cards{grid-template-columns:1fr}
+      .card{min-height:190px;border-radius:18px}
+      .card:hover,.card.reveal.visible:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(0,0,0,.2)}
+      .timeline-item{grid-template-columns:1fr;gap:8px}
+      .skills-grid{grid-template-columns:1fr 1fr}
+      .contact-panel{grid-template-columns:1fr;align-items:start;border-radius:22px}
+      .contact-buttons{flex-direction:row;flex-wrap:wrap;min-width:0}
+      .contact-buttons .btn{flex:1}
+      footer{flex-direction:column}
+    }
+    @media(max-width:420px){
+      .skills-grid{grid-template-columns:1fr}
+      .navlinks{gap:8px}
+      .brand{font-size:18px}
+      .btn{padding:12px 13px}
+      .contact-buttons .discord-row{width:100%}
+    }
+  </style>
+</head>
+<body>
+<header class="topbar"><div class="wrap nav"><a class="brand" href="#home" aria-label="Mohammad Rohan home">ROHAN<span>.</span></a><nav class="navlinks" aria-label="Main navigation"><a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a class="contact-link" href="#contact">Get in touch</a></nav></div></header>
+<main>
+  <section class="hero" id="home" style="border-top:0"><div class="wrap"><div class="hero-layout"><div class="hero-copy"><div class="eyebrow">Student · Entrepreneur · Community builder</div><h1>Ideas into<br><span class="outline">action.</span></h1><div class="hero-bottom"><p class="intro">I'm Mohammad Rohan, an HSC 2027 student exploring entrepreneurship, technology, leadership and the communities built around shared interests.</p><div class="actions"><a class="btn primary" href="#work">Explore my work <span></span></a><a class="btn" href="#contact">Connect with me <span></span></a></div></div></div><aside class="portrait-wrap" aria-label="Profile portrait"><div class="portrait-frame" id="portraitFrame"><img id="profileImage" src="profile.jpg" alt="Portrait of Mohammad Rohan"><div class="portrait-placeholder" id="portraitPlaceholder"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><circle cx="32" cy="21" r="12" stroke="currentColor" stroke-width="1.5"/><path d="M10 57c2-13 10-20 22-20s20 7 22 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span>Your portrait goes here</span><span style="letter-spacing:0;text-transform:none">Add your photo as profile.jpg</span></div></div><div class="portrait-caption"><span>Mohammad Rohan</span><span>Profile</span></div></aside></div><div class="scroll-note"><span>Dhaka, Bangladesh</span><span>Curious by nature.<br>Building as I learn.</span></div></div></section>
+  <section id="about"><div class="wrap"><div class="section-head reveal"><div class="num">01 / ABOUT</div><div><h2>Curious about how<br>things get built.</h2><p class="lede">A student with a business mindset and a growing interest in technology.</p></div></div><div class="about-grid reveal"><div class="about-copy"><p>I'm currently studying at Rajuk Uttara Model College in the HSC 2027 batch. I completed my SSC at BH Khan School & College with a GPA of 5.</p><p>Outside academics, I'm interested in entrepreneurship—from running my own business to exploring dropshipping and reselling. I'm enthusiastic about technology, enjoy gaming, and am learning to code with the help of AI. I also built the STRITA e-commerce website with AI assistance as part of that learning journey.</p><p>I like taking ideas from concept to execution, collaborating with people, and getting involved in events and communities.</p></div><div class="facts"><div class="fact"><div class="label">Currently</div><div class="value">HSC 2027 student</div></div><div class="fact"><div class="label">Education</div><div class="value">Rajuk Uttara Model College</div></div><div class="fact"><div class="label">Foundation</div><div class="value">SSC — BH Khan School & College · GPA 5</div></div><div class="fact"><div class="label">Interests</div><div class="value">Entrepreneurship, technology, gaming, events</div></div><div class="fact"><div class="label">Learning</div><div class="value">Coding and digital projects with AI assistance</div></div></div></div></div></section>
+  <section id="work"><div class="wrap"><div class="section-head reveal"><div class="num">02 / SELECTED WORK</div><div><h2>Projects & ventures.</h2><p class="lede">A focused selection of business building and digital experimentation.</p></div></div><div class="cards">
+    <article class="card reveal"><div class="card-top"><span class="project-index">PROJECT / 01</span><span class="tag">E-commerce</span></div><h3>STRITA</h3><p>A football jersey brand and e-commerce website. I developed the website with AI assistance while learning to code and working on the brand's online presence.</p><a class="card-link" href="https://www.instagram.com/strita.bd/" target="_blank" rel="noopener noreferrer">Visit STRITA Instagram</a></article>
+    <article class="card reveal"><div class="card-top"><span class="project-index">PROJECT / 02</span><span class="tag">Brand concept</span></div><h3>NOVIQ</h3><p>An electronics brand concept exploring a new business direction as I develop the idea and its online presence.</p><a class="card-link" href="https://www.instagram.com/noviq.bd/" target="_blank" rel="noopener noreferrer">Visit NOVIQ Instagram</a></article>
+    <article class="card reveal"><div class="card-top"><span class="project-index">ONGOING</span><span class="tag">Commerce</span></div><h3>Reselling & dropshipping</h3><p>Exploring different entrepreneurship models, including reselling and dropshipping. This is an ongoing area of practical learning.</p><span class="card-link">Business experience</span></article>
+    <article class="card reveal"><div class="card-top"><span class="project-index">APPROACH</span><span class="tag">AI-assisted learning</span></div><h3>Learning by building</h3><p>Developing my coding knowledge by working through real projects and using AI tools to help me understand and implement ideas.</p><span class="card-link">Technology & experimentation</span></article>
+  </div></div></section>
+  <section id="experience"><div class="wrap"><div class="section-head reveal"><div class="num">03 / EXPERIENCE</div><div><h2>People, projects<br>& participation.</h2><p class="lede">Experience gained through student leadership, event involvement, outreach and entrepreneurship.</p></div></div><div class="timeline">
+    <article class="timeline-item reveal"><div class="meta">Student leadership</div><div><h3>Co-Executive — RCRIC</h3><p>Served as a co-executive of the Rajuk College Robotics and ICT Club (RCRIC), contributing to student organization activities.</p></div></article>
+    <article class="timeline-item reveal"><div class="meta">Events & outreach</div><div><h3>Volunteer and campus ambassador involvement</h3><p>Participated in event activities and campus outreach across student events. I have certificates relating to event participation and campus ambassador roles.</p><div class="event-list"><span class="pill">3rd National Astro Carnival · IHSB</span><span class="pill">NDPC National Film Fest 2026 · NDC</span><span class="pill">Technovation 2026 · SJC</span><span class="pill">Innoverse Bangladesh · BUET</span><span class="pill">Bangladesh Science Exposium 2026 · DU</span><span class="pill">Rajuk National Cultural Ilumina 2025 · RUMC</span><span class="pill">Rajuk National ScisPark 4.0 · RUMC</span><span class="pill">Rajuk College Events</span></div></div></article>
+    <article class="timeline-item reveal"><div class="meta">Entrepreneurship</div><div><h3>Independent business projects</h3><p>Working on my own business initiatives and exploring dropshipping and reselling, while developing practical experience in sales, marketing and customer communication.</p></div></article>
+    <article class="timeline-item reveal"><div class="meta">Community</div><div><h3>Gaming and shared-interest communities</h3><p>Gaming has been a long-standing hobby, alongside an interest in creating content and contributing to community activities.</p></div></article>
+  </div></div></section>
+  <section id="skills"><div class="wrap"><div class="section-head reveal"><div class="num">04 / SKILLS</div><div><h2>Skills in practice.</h2><p class="lede">Areas I've worked with through business projects, event involvement and personal learning.</p></div></div><div class="skills-grid reveal"><div class="skill">Sales <span>01</span></div><div class="skill">Event logistics <span>02</span></div><div class="skill">Leadership <span>03</span></div><div class="skill">Marketing <span>04</span></div><div class="skill">Communication <span>05</span></div><div class="skill">Video editing <span>06</span></div><div class="skill">AI-assisted coding <span>07</span></div><div class="skill">Entrepreneurship <span>08</span></div><div class="skill">Community building <span>09</span></div></div></div></section>
+  <section id="certifications"><div class="wrap"><div class="section-head reveal"><div class="num">05 / CERTIFICATES</div><div><h2>Learning & participation.</h2><p class="lede">My certificates and event-related achievements include campus ambassador and volunteer involvement, olympiad participation (including the AI Olympiad associated with Josephite Fest and NDC Film Fest), and a Certificate of Achievement for Bangladesh Science Exposium 2026. Other event involvement includes the 3rd National Astro Carnival at International Hope School Bangladesh, NDPC National Film Fest 2026, Technovation 2026 presented by Josephite IT Club, and Innoverse Bangladesh at BUET. Rajuk College Cultural Illumina, Rajuk National ScisPark 4.0, and other Rajuk College events are listed last to keep Rajuk events grouped separately.</p></div></div></div></section>
+  <section id="contact"><div class="wrap"><div class="contact-panel reveal"><div><div class="eyebrow">06 / CONTACT</div><h2>Have an idea?<br>Let's connect.</h2><p>Open to meaningful conversations, collaborations, student opportunities, events and interesting projects.</p></div><div class="contact-buttons"><a class="btn" href="https://wa.me/8801906797767" target="_blank" rel="noopener noreferrer">WhatsApp <span></span></a><a class="btn" href="https://www.instagram.com/_.rohvn._/" target="_blank" rel="noopener noreferrer">Instagram <span></span></a><a class="btn" href="https://www.facebook.com/share/1MMzVFtwk2/" target="_blank" rel="noopener noreferrer">Facebook <span></span></a><a class="btn" href="mailto:sikdarmohibulla@gmail.com">Email <span></span></a><div class="discord-row"><a class="btn" href="https://discord.com/app" target="_blank" rel="noopener noreferrer" aria-label="Open Discord">Discord: rohanlovesgooning <span></span></a><button class="copy-discord" type="button" id="copyDiscord" aria-label="Copy Discord username">Copy</button></div></div></div></div></section>
+</main>
+<footer class="wrap"><span>© <span id="year"></span> Mohammad Rohan</span><div class="socials"><a href="https://www.instagram.com/_.rohvn._/" target="_blank" rel="noopener noreferrer">Personal Instagram</a><a href="https://www.instagram.com/strita.bd/" target="_blank" rel="noopener noreferrer">STRITA</a><a href="https://www.instagram.com/noviq.bd/" target="_blank" rel="noopener noreferrer">NOVIQ</a><a href="https://github.com/MorganiteGaming" target="_blank" rel="noopener noreferrer">GitHub</a></div></footer>
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+const copyDiscord=document.getElementById("copyDiscord");
+copyDiscord.addEventListener("click",async()=>{
+  const username="rohanlovesgooning";
+  try{
+    await navigator.clipboard.writeText(username);
+    copyDiscord.textContent="Copied!";
+    setTimeout(()=>copyDiscord.textContent="Copy",1600);
+  }catch(error){
+    window.prompt("Copy your Discord username:",username);
+  }
+});
+const items=document.querySelectorAll(".reveal");
+if("IntersectionObserver"in window&&!window.matchMedia("(prefers-reduced-motion: reduce)").matches){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target)}}),{threshold:.12});items.forEach(item=>observer.observe(item))}else{items.forEach(item=>item.classList.add("visible"))}
+const portrait=document.getElementById("profileImage"),placeholder=document.getElementById("portraitPlaceholder");
+function showPortrait(){if(portrait.complete&&portrait.naturalWidth>0){portrait.style.display="block";placeholder.style.display="none"}else{portrait.style.display="none";placeholder.style.display="flex"}}
+portrait.addEventListener("load",showPortrait);portrait.addEventListener("error",showPortrait);showPortrait();
+</script>
+</body>
+</html>
